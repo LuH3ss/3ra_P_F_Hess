@@ -4,7 +4,7 @@
     </div>
 
     <div class="col-sm-12 text-end">
-        <button mat-raised-button *ngIf="rolActivo==3" color="primary" (click)="altaCurso()"><mat-icon>add</mat-icon> Agregar nuevo</button>
+        <button mat-raised-button *ngIf="rolActivo==1" color="primary" (click)="altaCurso()"><mat-icon>add</mat-icon> Agregar nuevo</button>
     </div>
 
     <div class="col-sm-12">
@@ -33,8 +33,8 @@
                 <th mat-header-cell *matHeaderCellDef></th>
                 <td mat-cell *matCellDef="let element" class="text-end">
                     <mat-icon (click)="listarAlumnos(element)" style="cursor: pointer;">assignment</mat-icon>&nbsp;
-                    <mat-icon *ngIf="rolActivo==3" (click)="editarCurso(element)" style="cursor: pointer;">edit</mat-icon>&nbsp;    
-                    <mat-icon *ngIf="rolActivo==3" (click)="eliminarCurso(element)" style="cursor: pointer;">delete</mat-icon>                  
+                    <mat-icon *ngIf="rolActivo==1" (click)="editarCurso(element)" style="cursor: pointer;">edit</mat-icon>&nbsp;    
+                    <mat-icon *ngIf="rolActivo==1" (click)="eliminarCurso(element)" style="cursor: pointer;">delete</mat-icon>                  
                 </td>
               </ng-container>
             <tr mat-header-row *matHeaderRowDef="nombreColumnas"></tr>

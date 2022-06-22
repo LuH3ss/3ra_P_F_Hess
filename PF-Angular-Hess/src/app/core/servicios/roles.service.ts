@@ -13,7 +13,7 @@ export class RolesService {
 
   listaRoles: any[] = [
     {
-      id:1,
+      id:3,
       nombre:"Alumno"
     },
     {
@@ -21,7 +21,7 @@ export class RolesService {
       nombre:"Profesor"      
     },
     {
-      id:3,
+      id:1,
       nombre:"Administrador"
     },
     {

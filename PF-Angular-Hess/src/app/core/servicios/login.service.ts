@@ -50,7 +50,7 @@ export class LoginService {
     let usr=data.find(x=>x.correoElectronico==usuario && x.pass==pass);
     if (usr!=null)
     {
-      if ((usr.rol==3) || (usr.rol==4)) // Solo se permite el ingreso a Administradores y Usuarios (Alumnos y Profesores no tienen acceso)
+      if ((usr.rol==1) || (usr.rol==2)) // Solo se permite el ingreso a Administradores y Usuarios (Alumnos y Profesores no tienen acceso)
       {
         console.log("usuario obtenido de la llamada",usr);
         this.setUsuarioActual(usr);
