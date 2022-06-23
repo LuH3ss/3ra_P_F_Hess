@@ -39,8 +39,6 @@ export class LoginService {
     .subscribe((data)=>{
 
       this.validarDatosUsuario(data,usuario,pass);
-      
-      
     });
 
   }
