@@ -30,7 +30,7 @@ export class ListaUsuariosComponent implements OnInit , OnDestroy, AfterViewInit
   //datasource!:any[];
   ds:any;
   rolActivo:number=0;
-  
+
   usuario$?:Observable<Usuario[]>;
   // urlPar?:Observable<ParamMap>;
   // suscripUrlPar:any;
@@ -38,13 +38,12 @@ export class ListaUsuariosComponent implements OnInit , OnDestroy, AfterViewInit
   suscripcion:any;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(public dialog:MatDialog, 
-    private servicioUsuario:UsuarioService, 
+  constructor(public dialog:MatDialog,
+    private servicioUsuario:UsuarioService,
     private servicioRoles:RolesService,
     private servicioLogin: LoginService,
-    private ruta:ActivatedRoute) { 
+    private ruta:ActivatedRoute) {
       console.log('constructor');
-     
     }
 
   ngOnDestroy(): void {
@@ -159,9 +158,9 @@ export class ListaUsuariosComponent implements OnInit , OnDestroy, AfterViewInit
           }
         )
       }
-      
 
-    });    
+
+    });
   }
 
 
