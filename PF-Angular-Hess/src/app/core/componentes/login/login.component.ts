@@ -31,7 +31,7 @@ ds:any;
     usuario:new FormControl('',[Validators.required]),
     clave: new FormControl('',[Validators.required])
   });
-  
+
 
   ngOnInit(): void {
   }
@@ -61,7 +61,7 @@ ds:any;
               //this.listar();
               // this.obtenerUsuarios();
 
-              this.ds.paginator = this.paginator; // el que se mata a pajas
+              this.ds.paginator = this.paginator; 
             }
           )
         }

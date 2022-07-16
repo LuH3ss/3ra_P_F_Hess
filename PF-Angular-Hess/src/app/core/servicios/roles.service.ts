@@ -13,19 +13,19 @@ export class RolesService {
 
   listaRoles: any[] = [
     {
-      id:3,
+      id:2,//no ingresa
       nombre:"Alumno"
     },
     {
-      id:2,
-      nombre:"Profesor"      
+      id:1,//no puede ingresar
+      nombre:"Profesor"
     },
     {
-      id:1,
+      id:1, //el rol uno accede a todo
       nombre:"Administrador"
     },
     {
-      id:4,
+      id:2, // visualiza y no edita
       nombre:"Usuario"
     }];
 
